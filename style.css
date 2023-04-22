@@ -2,3 +2,9 @@
     font-family: "Manrope";
     src: url(Fonts/Manrope-VariableFont_wght.ttf);
 }
+
+html, body {
+    width: 1440px;
+    height: 3043px;
+    overflow-x: hidden;
+}
