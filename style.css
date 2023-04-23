@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Manrope";
+    src: url(Fonts/Manrope-VariableFont_wght.ttf);
+}
+
+html, body {
+    width: 1440px;
+    height: 3043px;
+    overflow-x: hidden;
+    background-color: #DBF9FC;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #ffffff; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
