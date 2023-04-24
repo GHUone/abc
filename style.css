@@ -5,7 +5,6 @@
 
 html, body {
     height: 3043px;
-    background-color: var(--primary-color);
     margin: auto;
     overflow-x: hidden;
 }
@@ -15,9 +14,6 @@ body:hover {
 
 ::-webkit-scrollbar {
     width: 15px;
-  }
-  ::-webkit-scrollbar-track {
-    background: var(--eighth-color);
   }
   ::-webkit-scrollbar-thumb {
     background: #888; 

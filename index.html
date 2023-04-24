@@ -15,19 +15,21 @@
 <button class = "register-button">Register</button>
 </div> <!--registration-buttons-->
 
-
-
-
 <style> 
-.moon {
-    cursor: pointer;
-    position: fixed;
-    margin-top: -5px;
-    margin-left: -210px;
-    scale: 0.05;
-    z-index: 5;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-}
+    body {
+        background-color: var(--primary-color);
+    }
+    ::-webkit-scrollbar-track {
+    background: var(--eighth-color);
+    }
+    .moon {
+        cursor: pointer;
+        position: fixed;
+        margin-top: -5px;
+        margin-left: -210px;
+        scale: 0.05;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
     :root {
         --primary-color: #DBF9FC;
         --secondary-color: #3C9379;
