@@ -5,15 +5,19 @@
 
 html, body {
     height: 3043px;
+    background-color: var(--primary-color);
+    margin: auto;
     overflow-x: hidden;
-    background-color: #DBF9FC;
+}
+body:hover {
+    background-color: var(--primary-color);
 }
 
 ::-webkit-scrollbar {
     width: 15px;
   }
   ::-webkit-scrollbar-track {
-    background: #ffffff; 
+    background: var(--eighth-color);
   }
   ::-webkit-scrollbar-thumb {
     background: #888; 
