@@ -21,7 +21,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100;
+        height: 120;
         background-color: #DBF9FC;
         z-index: 1;
     }
@@ -43,15 +43,21 @@
     }
     .main-logo:hover {
         cursor: pointer;
+        scale: 1.1;
+        transition: 250ms;
     }
-
+    .main-logo:not(:hover) {
+        cursor: pointer;
+        scale: 1;
+        transition: 250ms;
+    }
     .color-change {
         color:#3C9379;
     }
 
     .nav-bar {
         position: fixed;
-        margin-top: 3.2%;
+        margin-top: 3.3%;
         margin-left: 33.8%;
         display: flex;
         flex-direction: row;
@@ -66,7 +72,7 @@
         flex-grow: 0;
         color: #101913;
         letter-spacing: 0.3px;
-        font-family: 'Manrope';
+        font-family: "Manrope";
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -213,11 +219,11 @@ household products and more at a single place.</div>
 <div class = introduction-end>We Collaborate With 250+ Leading Top E Commerce and Brands</div>
 
 <div class = collaboration-page>
-<img src = "Images/Tokopedia.png" class = tokopedia onclick="tokoClick()"><!--<span class = "tip-text-1">Clicking this will refer you to the official Tokopedia media page.</span>-->
-<img src = "Images/Balenciaga.png" class = balenciaga onclick="balenClick()">
-<img src = "Images/Adidas.png" class = adidas onclick="adidasClick()">
-<img src = "Images/Gucci.png" class = gucci onclick="gucciClick()">
-<img src = "Images/Bukalapak.png" class = bukalapak onclick="bukaClick()">
+<div class = tokopedia onclick="tokoClick()"><img src = Images/Tokopedia.png><span class = "tip-text-1">Clicking this will refer you to the official Tokopedia media page.</span></div>
+<div class = balenciaga onclick="balenClick()"><img src = Images/Balenciaga.png><span class = "tip-text-2">Clicking this will refer you to the official Balenciaga media page.</span></div>
+<div class = adidas onclick="adidasClick()"><img src = Images/Adidas.png><span class = "tip-text-3">Clicking this will refer you to the official Adidas media page.</span></div>
+<div class = gucci onclick="gucciClick()"><img src = Images/Gucci.png><span class = "tip-text-4">Clicking this will refer you to the official Gucci media page.</span></div>
+<div class = bukalapak onclick="bukaClick()"><img src = Images/Bukalapak.png><span class = "tip-text-5">Clicking this will refer you to the official Bukalapak media page.</span>
 </div> <!--collaboration-page-->
 
 <style>
@@ -299,7 +305,7 @@ household products and more at a single place.</div>
     .hero-image {
         position: absolute;
         margin-top: -176px;
-        margin-left: 440px;
+        margin-left: 32%;
         width: 973px;
         height: 624px;
         user-select: none;
@@ -307,7 +313,7 @@ household products and more at a single place.</div>
 
     .introduction-end {
         position: relative;
-        margin: auto;
+        margin-left: 28%;
         top: 550px;
         width: 622px;
         height: 80px;
@@ -327,14 +333,14 @@ household products and more at a single place.</div>
 
     .collaboration-page {
         position: relative;
-        margin: auto;
+        margin-left: 5%;
         top: 600px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         padding: 0px;
-        gap: 50px;
+        gap: 4.5%;
         width: 1200px;
         height: 46px;
         flex: none;
@@ -388,6 +394,174 @@ household products and more at a single place.</div>
         transition: 250ms;
     }
 
+    .adidas {
+        margin-top: -17px;
+    }
+
+    .tokopedia .tip-text-1 {
+        visibility: hidden;
+        width: 210px;
+        background-color: #0059ff;
+        color: #fff;
+        text-align: center;
+        font-family: "Manrope";
+        font-size: 12px;
+        border-radius: 3px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: 117%;
+        left: 50%;
+        margin-left: -107px;
+        opacity: 0;
+        transition: 0.3s;
+    }
+    .tokopedia .tip-text-1::after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent #0059ff transparent;
+    }
+    .tokopedia:hover .tip-text-1 {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .balenciaga .tip-text-2 {
+        visibility: hidden;
+        width: 210px;
+        background-color: #0059ff;
+        color: #fff;
+        text-align: center;
+        font-family: "Manrope";
+        font-size: 12px;
+        border-radius: 3px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: 150%;
+        left: 50%;
+        margin-left: -107px;
+        opacity: 0;
+        transition: 0.3s;
+    }
+    .balenciaga .tip-text-2::after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent #0059ff transparent;
+    }
+    .balenciaga:hover .tip-text-2 {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .adidas .tip-text-3 {
+        visibility: hidden;
+        width: 210px;
+        background-color: #0059ff;
+        color: #fff;
+        text-align: center;
+        font-family: "Manrope";
+        font-size: 12px;
+        border-radius: 3px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: 127%;
+        left: 50%;
+        margin-left: -107px;
+        opacity: 0;
+        transition: 0.3s;
+    }
+    .adidas .tip-text-3::after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent #0059ff transparent;
+    }
+    .adidas:hover .tip-text-3 {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .gucci .tip-text-4 {
+        visibility: hidden;
+        width: 202px;
+        background-color: #0059ff;
+        color: #fff;
+        text-align: center;
+        font-family: "Manrope";
+        font-size: 12px;
+        border-radius: 3px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: 127%;
+        left: 50%;
+        margin-left: -100px;
+        opacity: 0;
+        transition: 0.3s;
+    }
+    .gucci .tip-text-4::after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent #0059ff transparent;
+    }
+    .gucci:hover .tip-text-4 {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .bukalapak .tip-text-5 {
+        visibility: hidden;
+        width: 202px;
+        background-color: #0059ff;
+        color: #fff;
+        text-align: center;
+        font-family: "Manrope";
+        font-size: 12px;
+        border-radius: 3px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: 127%;
+        left: 50%;
+        margin-left: -97px;
+        opacity: 0;
+        transition: 0.3s;
+    }
+    .bukalapak .tip-text-5::after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent #0059ff transparent;
+    }
+    .bukalapak:hover .tip-text-5 {
+        visibility: visible;
+        opacity: 1;
+    }
 </style>
 
 <script>
@@ -406,5 +580,26 @@ household products and more at a single place.</div>
     function bukaClick () {
         window.location.replace("https://www.bukalapak.com/")
     }
-
 </script>
+
+<div class = categories-introduction-text>Browse Categories of The Store</div>
+
+<style>
+    .categories-introduction-text {
+        position: absolute;
+        margin-top: 705px;
+        margin-left: 4.5%;
+        width: 343px;
+        height: 80px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 0.3px;
+        color: #101913;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+</style>
