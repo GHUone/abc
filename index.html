@@ -233,7 +233,6 @@
 <img src = Images/Gucci.png class = gucci>
 <img src = Images/Bukalapak.png class = bukalapak>
 </div> <!--brands-->
-<h2 class = categories>Browse Categories of <br> The Store</h2>
 <style>
     .brands {
         display: flex;
@@ -288,7 +287,39 @@
         scale: 1;
         transition: 250ms;
     }
-
+</style>
+<h2 class = categories>Browse Categories of <br> The Store</h2>
+<div class = all-cards>
+<div class = two-cards>
+<div class = card-text-1>
+<img src = "Images/Card 1.png" class = card-1>
+<h2>Fashion</h2>
+<p>30,000 items</p>
+<img src = "Images/Shadow 1.png" class = shadow-1>
+</div> <!--card-text-1-->
+<div class = card-text-2>
+<img src = "Images/Card 2.png" class = card-2>
+<h2>Skincare</h2>
+<p>2,000 items</p>
+<img src = "Images/Shadow 2.png" class = shadow-2>
+</div> <!--card-text-2-->
+</div> <!--two-cards-->
+<div class = four-cards>
+<div class = card-text-3>
+<img src = "Images/Card 3.png" class = card-3>
+<h2>Shoes</h2>
+<p>10,000 items</p>
+<img src = "Images/Shadow 3.png" class = shadow-3>
+</div> <!--card-text-3-->
+<div class = card-text-4>
+<img src = "Images/Card 4.png" class = card-4>
+<h2>Electronic</h2>
+<p>10,000 items</p>
+<img src = "Images/Shadow 4.png" class = shadow-4>
+</div> <!--card-text-4-->
+</div> <!--four-cards-->
+</div> <!--all-cards-->
+<style>
     .categories {
         font-family: Manrope;
         font-weight: 700;
@@ -297,6 +328,213 @@
         margin-left: 5.5%;
         margin-top: 2%;
     }
+    .two-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 30px;
+        margin: 26px;
+    }
+    .four-cards {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 26px;
+    }
+    .all-cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+    }
+    .card-1 {
+        border-radius: 30px;
+    }
+    .card-2 {
+        border-radius: 30px;
+    }
+    .card-3 {
+        border-radius: 30px;
+    }
+    .card-4 {
+        border-radius: 30px;
+    }
+
+    .card-text-1 h2 {
+        position: absolute;
+        font-family: Manrope;
+        font-weight: 700;
+        font-size: 20px;
+        color: #FFFFFF;
+        margin-top: -150px;
+        margin-left: 370px;
+        letter-spacing: 0.3px;
+        line-height: 20px;
+        z-index: 2;
+    }
+    .card-text-1 p {
+        position: absolute;
+        font-family: Manrope;
+        letter-spacing: 0.3px;
+        color :white;
+        margin-top: -127px;
+        margin-left: 370px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        z-index: 2;
+    }
+    .card-text-1 {
+        user-select: none;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .shadow-1 {
+        position: absolute;
+        margin-left: -500px;
+        z-index: 0;
+        opacity: 50%;
+    }
+    .shadow-1:hover {
+        opacity: 100%;
+        transition: 250ms;
+    }
+    .shadow-1:not(:hover) {
+        opacity: 50%;
+        transition: 250ms;
+    }
+    .card-text-2 h2 {
+        position: absolute;
+        font-family: Manrope;
+        font-weight: 700;
+        font-size: 20px;
+        color: #FFFFFF;
+        margin-top: -150px;
+        margin-left: 370px;
+        letter-spacing: 0.3px;
+        line-height: 20px;
+        z-index: 2;
+    }
+    .card-text-2 p {
+        position: absolute;
+        font-family: Manrope;
+        letter-spacing: 0.3px;
+        color :white;
+        margin-top: -127px;
+        margin-left: 370px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        z-index: 2;
+    }
+    .card-text-2 {
+        user-select: none;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .shadow-2 {
+        position: absolute;
+        margin-left: -500px;
+        z-index: 0;
+        opacity: 50%;
+    }
+    .shadow-2:hover {
+        opacity: 100%;
+        transition: 250ms;
+    }
+    .shadow-2:not(:hover) {
+        opacity: 50%;
+        transition: 250ms;
+    }
+    .card-text-3 h2 {
+        position: absolute;
+        font-family: Manrope;
+        font-weight: 700;
+        font-size: 20px;
+        color: #FFFFFF;
+        margin-top: -360px;
+        margin-left: 160px;
+        letter-spacing: 0.3px;
+        line-height: 20px;
+        z-index: 2;
+    }
+    .card-text-3 p {
+        position: absolute;
+        font-family: Manrope;
+        letter-spacing: 0.3px;
+        color :white;
+        margin-top: -337px;
+        margin-left: 160px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        z-index: 2;
+    }
+    .card-text-3 {
+        user-select: none;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .shadow-3 {
+        position: absolute;
+        margin-left: -287px;
+        z-index: 0;
+        opacity: 50%;
+    }
+    .shadow-3:hover {
+        opacity: 100%;
+        transition: 250ms;
+    }
+    .shadow-3:not(:hover) {
+        opacity: 50%;
+        transition: 250ms;
+    }
+    .card-text-4 h2 {
+        position: absolute;
+        font-family: Manrope;
+        font-weight: 700;
+        font-size: 20px;
+        color: #FFFFFF;
+        margin-top: -360px;
+        margin-left: 225px;
+        letter-spacing: 0.3px;
+        line-height: 20px;
+        z-index: 2;
+    }
+    .card-text-4 p {
+        position: absolute;
+        font-family: Manrope;
+        letter-spacing: 0.3px;
+        color :white;
+        margin-top: -337px;
+        margin-left: 225px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        z-index: 2;
+    }
+    .card-text-4 {
+        user-select: none;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .shadow-4 {
+        position: absolute;
+        margin-left: -360px;
+        z-index: 0;
+        opacity: 50%;
+    }
+    .shadow-4:hover {
+        opacity: 100%;
+        transition: 250ms;
+    }
+    .shadow-4:not(:hover) {
+        opacity: 50%;
+        transition: 250ms;
+    }
 </style>
 
+</style>
 </html>
