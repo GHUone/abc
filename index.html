@@ -1,400 +1,250 @@
+<html>
+<head>
+<title>Portfolio Page</title>
 <link rel= "stylesheet" type= "text/css" href="style.css">
-<div class = menu-bar></div>
-<div class = main-logo>Ba<span class = color-change>chira</span></div>
-<div class = nav-bar>
-<div class = home-button onclick="homeClick()">Home</div>
-<div class = products-button>Products</div>
-<div class = categories-button>Categories</div>
-<div class = brands-button>Brands</div>
-<div class = pricing-button>Pricing</div>
-</div> <!--nav-bar-->
-</div> <!--top-bar-->
-<div class = registration-buttons>
-<img src = "Images/moon.png" class = moon onclick = "nightFunction()">
-<div class = login-button>Login</div>
-<button class = "register-button">Register</button>
-</div> <!--registration-buttons-->
+</head>
+<body>
+    <nav>
+        <div class = logo>Ba<span class = colored-text>chira</span></div>
+        <ul>
+            <li><a href = "" class = home-btn>Home</a></li>
+            <li><a href = "" class = products-btn>Products</a></li>
+            <li><a href = "" class = categories-btn>Categories</a></li>
+            <li><a href = "" class = brands-btn>Brands</a></li>
+            <li><a href = "" class = pricing-btn>Pricing</a></li>
+    </div>
+        </ul>
+        <div class = registration>
+            <a class = login-text>Login</a></li>
+            <button href = "" class = register-btn>Register</button></li>
+    </nav>
 
-<style> 
-    body {
-        background-color: var(--primary-color);
-    }
-    ::-webkit-scrollbar-track {
-    background: var(--eighth-color);
-    }
-    .moon {
-        cursor: pointer;
-        position: fixed;
-        margin-top: -5px;
-        margin-left: -210px;
-        scale: 0.05;
-        transform: matrix(-1, 0, 0, 1, 0, 0);
-    }
-    :root {
-        --primary-color: #DBF9FC;
-        --secondary-color: #3C9379;
-        --third-color: #101913;
-        --fourth-color: #535A56;
-        --fifth-color: #0059ff;
-        --sixth-color: #535A56;
-        --seventh-color: #2f705b;
-        --eighth-color: #ffffff;
-    }
-    .dark-mode{
-        --primary-color: #000000;
-        --secondary-color: #441010; 
-        --third-color: #dbdbdb;
-        --fourth-color: #a8a8a8;
-        --fifth-color: #990000;
-        --sixth-color: #aeafaf;
-        --seventh-color: #330a0a;
-        --eighth-color: #111111;
-    }
-    .menu-bar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 120;
-        background-color: var(--primary-color);
-        z-index: 1;
-    }
-
-    .main-logo {
-        cursor: pointer;
-        position: fixed;
-        margin-top: 2.6%;
-        margin-left: 8.3%;
-        font-family: "Manrope";
+</body>
+<style>
+    .logo {
+        font-family: 'Manrope';
         font-style: normal;
         font-weight: 700;
         font-size: 36px;
         line-height: 36px;
-        letter-spacing: -1.5px;
-        color: var(--third-color);
-        user-select: none;
-        z-index: 2;
-    }
-    .main-logo:hover {
         cursor: pointer;
+        letter-spacing: -1.5px;
+        user-select: none;
+    }
+    .colored-text {
+        color: #3C9379;
+    }
+    .logo:hover {
         scale: 1.1;
         transition: 250ms;
     }
-    .main-logo:not(:hover) {
-        cursor: pointer;
+    .logo:not(:hover) {
         scale: 1;
         transition: 250ms;
     }
-    .color-change {
-        color:var(--secondary-color);
-    }
-
-    .nav-bar {
-        position: fixed;
-        margin-top: 3.3%;
-        margin-left: 33.8%;
+    .registration {
+        padding: 20px 0;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 0px;
-        gap: 40px;
-        width: 471px;
-        height: 16px;
-        flex: none;
-        order: 1;
-        flex-grow: 0;
+        font-family: Manrope;
         color: #101913;
+        display: inline-block;
+        list-style: none;
         letter-spacing: 0.3px;
-        font-family: "Manrope";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 16px;
-        user-select: none;
-        z-index: 2;
-    }
-    
-    .home-button:hover {
-        cursor: pointer;
-        color: var(--sixth-color);
-        transition: 250ms;
-    }
-    .products-button:hover {
-        cursor: pointer;
-        color: var(--sixth-color);
-        transition: 250ms;
-    }
-    .categories-button:hover {
-        cursor: pointer;
-        color: var(--sixth-color);
-        transition: 250ms;
-    }
-    .brands-button:hover {
-        cursor: pointer;
-        color: var(--sixth-color);
-        transition: 250ms;
-    }
-    .pricing-button:hover {
-        cursor: pointer;
-        color: var(--sixth-color);
-        transition: 250ms;
-    }
-    .home-button:not(:hover) {
-        color: var(--third-color);
-        transition: 250ms;
-    }
-    .products-button:not(:hover) {
-        color: var(--third-color);
-        transition: 250ms;
-    }
-    .categories-button:not(:hover) {
-        color: var(--third-color);
-        transition: 250ms;
-    }
-    .brands-button:not(:hover) {
-        color: var(--third-color);
-        transition: 250ms;
-    }
-    .pricing-button:not(:hover) {
-        color: var(--third-color);
-        transition: 250ms;
-    }
-
-    .registration-buttons {
-        position: fixed;
-        margin-top: 2.4%;
-        margin-left: 84.9%;
-        position: fixed;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 0px;
-        gap: 20px;
-        z-index: 2;
-    }
-
-    .login-button {
-        width: 43px;
-        height: 16px;
-        font-family: 'Manrope';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 16px;
-        letter-spacing: 0.3px;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
         user-select: none;
     }
-    .login-button:hover {
+    .login-text {
+        font-weight: 500;
+    }
+    .login-text:hover {
         cursor: pointer;
-        color: var(--sixth-color);
+        color: #535A56;
         transition: 250ms;
     }
-    .login-button:not(:hover) {
-        color: var(--third-color);
+    .login-text:not(:hover) {
+        color: #101913;
         transition: 250ms;
     }
-    
-    .register-button {
+    .home-btn:hover {
+        cursor: pointer;
+        color: #535A56;
+        transition: 250ms;
+    }
+    .home-btn:not(:hover) {
+        color: #101913;
+        transition: 250ms;
+    }
+    .products-btn:hover {
+        cursor: pointer;
+        color: #535A56;
+        transition: 250ms;
+    }
+    .products-btn:not(:hover) {
+        color: #101913;
+        transition: 250ms;
+    }
+    .categories-btn:hover {
+        cursor: pointer;
+        color: #535A56;
+        transition: 250ms;
+    }
+    .categories-btn:not(:hover) {
+        color: #101913;
+        transition: 250ms;
+    }
+    .brands-btn:hover {
+        cursor: pointer;
+        color: #535A56;
+        transition: 250ms;
+    }
+    .pricing-btn:not(:hover) {
+        color: #101913;
+        transition: 250ms;
+    }
+    .register-btn {
+        margin-left: 20px;
         border: transparent;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 12px 18px;
-        gap: 10px;
+        background: #3C9379;
+        border-radius: 8px;
+        color: #FFFFFF;
+        font-family: Manrope;
+        font-weight: 500;
         width: 102px;
         height: 40px;
-        font-family: 'Manrope';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 16px;
         letter-spacing: 0.3px;
-        color: #FFFFFF;
-        border-radius: 8px;
-        flex: none;
-        order: 1;
-        flex-grow: 0;
-        user-select: none;
+        font-size: 16px;
     }
-    .register-button:hover {
+    .register-btn:hover {
         cursor: pointer;
-        background-color: var(--seventh-color);
+        background-color: #2e705c;
         transition: 250ms;
     }
-    .register-button:not(:hover) {
-        background-color: var(--secondary-color);
+    .register-btn:not(:hover) {
+        background-color: #3C9379;
         transition: 250ms;
     }
-
-</style>
-
-<script>
-    function homeClick() {
-        location.reload()
-    }
-    function nightFunction() {
-        document.body.classList.toggle("dark-mode");
-    }
-</script>
-
-<div class = introduction-page>
-<div class = introduction-text>Best Place to Buy <span class = color-change-2>Everything.</span></div>
-<div class = introduction-desc>At Bachira, you can shop for all your favorite beauty brands, clothes,
-household products and more at a single place.</div>
-<button class = introduction-button>Shopping Now</button>
-</div> <!--introduction-page-->
-
-<img src = "Images/Girl.png" class = hero-image>
-<div class = introduction-end>We Collaborate With 250+ Leading Top E Commerce and Brands</div>
-
-<div class = collaboration-page>
-<div class = tokopedia onclick="tokoClick()"><img src = Images/Tokopedia.png><span class = "tip-text-1">Clicking this will refer you to the official Tokopedia media page.</span></div>
-<div class = balenciaga onclick="balenClick()"><img src = Images/Balenciaga.png><span class = "tip-text-2">Clicking this will refer you to the official Balenciaga media page.</span></div>
-<div class = adidas onclick="adidasClick()"><img src = Images/Adidas.png><span class = "tip-text-3">Clicking this will refer you to the official Adidas media page.</span></div>
-<div class = gucci onclick="gucciClick()"><img src = Images/Gucci.png><span class = "tip-text-4">Clicking this will refer you to the official Gucci media page.</span></div>
-<div class = bukalapak onclick="bukaClick()"><img src = Images/Bukalapak.png><span class = "tip-text-5">Clicking this will refer you to the official Bukalapak media page.</span>
-</div> <!--collaboration-page-->
-
-<style>
-    .introduction-page {
-        position: relative;
-        top: 5.7%;
-        left: 7.8%;
+    nav{
         user-select: none;
-        z-index: 0;
+        width: 93.3%;
+        margin: auto;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
-    .introduction-text {
-        width: 500px;
-        height: 140px;
-        font-family: "Manrope";
-        font-style: normal;
-        font-weight: 700;
+    nav ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 10px 20px;
+    }
+    nav ul li a {
+        font-family: Manrope;
+        text-decoration: none;
+        color: #101913;
+        font-weight: 500;
+        letter-spacing: 0.3px;
+    }
+</style>
+<div class = info>
+    <h1>Best Place to Buy<br><span class = color-change-2>Everything.</span></h1>
+    <p>At Bachira, you can shop for all your favorite beauty brands, clothes,<br> household products and more at a single place.</p>
+    <button href = "" class = shopping-btn>Shopping Now</button>
+    <div class = "img-box">
+        <img src = "Images/Hero Image.png" class = full-girl>
+    </div>
+</div>
+<h2 class = collaboration-text>We Collaborate With 250+ Leading Top <br> E Commerce and Brands</h2>
+<style>
+    .info {
+        margin-left: 2.8%;
+        margin-top: 4.2%;
+        font-family: Manrope;
+        user-select: none;
+    }
+    .info h1 {
         font-size: 54px;
-        color: var(--third-color);
-        line-height: 70px;
+        color: #101913;
+        margin-bottom: 20px;
         letter-spacing: 0.5px;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-    }
-    .introduction-text:not(:hover) {
-        color: var(--third-color);
-        transition: 250ms;
-    }
-    .color-change-2 {
-        color: var(--secondary-color);
-        transition: 250ms;
     }
 
-    .introduction-desc {
-        margin-top: 32px;
-        width: 454px;
-        height: 40px;
-        font-family: 'Manrope';
-        font-style: normal;
+    .color-change-2 {
+        color: #3C9379;
+    }
+
+    .info p {
+        color: #535A56;
         font-weight: 400;
         font-size: 14px;
+        letter-spacing: 0.3px;
         line-height: 20px;
-        letter-spacing: 0.3px;
-        color: var(--fourth-color);
-        flex: none;
-        order: 1;
-        flex-grow: 0;
     }
-    .introduction-desc:hover {
-        color: var(--fourth-color);
-        transition: 250ms;
-    }
-
-    .introduction-button {
-        margin-top: 32px;
-        border: transparent;
-        font-family: 'Manrope';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 16px;
-        letter-spacing: 0.3px;
-        color: #FFFFFF;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        padding: 16px 22px;
-        gap: 10px;
+    .shopping-btn {
         width: 156px;
         height: 48px;
-        background: var(--secondary-color);
+        background: #3C9379;
+        font-family: Manrope;
         border-radius: 8px;
-        flex: none;
-        order: 2;
-        flex-grow: 0;
-        user-select: none;
+        border: transparent;
+        color: #FFFFFF;
+        font-size: 16px;
+        margin-top: 1.5%;
     }
-    .introduction-button:hover {
+    .shopping-btn:hover {
         cursor: pointer;
-        background-color: var(--seventh-color);
+        background-color: #2e705c;
         transition: 250ms;
     }
-    .introduction-button:not(:hover) {
-        background-color: var(--secondary-color);
+    .shopping-btn:not(:hover) {
+        background-color: #3C9379;
         transition: 250ms;
     }
 
-    .hero-image {
+    .img-box {
+        width: 45%;
+        height: 80%;
         position: absolute;
-        margin-top: -176px;
-        margin-left: 32%;
-        width: 973px;
-        height: 624px;
-        user-select: none;
+        bottom: 0;
+        right: 100px;
+
+    }
+    .img-box img {
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
     }
 
-    .introduction-end {
-        position: relative;
-        margin-left: 28%;
-        top: 550px;
-        width: 622px;
-        height: 80px;
-        font-family: 'Manrope';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 40px;
+    .collaboration-text {
+        margin-left: 2.8%;
+        margin-top: 24%;
+        font-family: Manrope;
         text-align: center;
         letter-spacing: 0.3px;
-        color: var(--third-color);
-        flex: none;
-        order: 0;
-        flex-grow: 0;
+        font-weight: 700;
+        font-size: 32px;
         user-select: none;
     }
+</style>
+<div class = brands>
+<img src = Images/tokopedia.png href = "" class = tokopedia>
+<img src = Images/balenciaga.png href = "" class = balenciaga>
+<img src = Images/adidas.png href = "" class = adidas>
+<img src = Images/gucci.png href = "" class = gucci>
+<img src = Images/bukalapak.png href = "" class = bukalapak>
+</div> <!--brands-->
+<h2 class = categories>Browse Categories of <br> The Store</h2>
 
-    .collaboration-page {
-        position: relative;
-        margin-left: 5%;
-        top: 600px;
+<style>
+    .brands {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 0px;
-        gap: 4.5%;
-        width: 1200px;
-        height: 46px;
-        flex: none;
-        order: 1;
-        flex-grow: 0;
-        user-select: none;
+        padding: 79px;
     }
+
     .tokopedia:hover {
-        
-        cursor: pointer;
         scale: 1.1;
         transition: 250ms;
     }
@@ -403,7 +253,6 @@ household products and more at a single place.</div>
         transition: 250ms;
     }
     .balenciaga:hover {
-        cursor: pointer;
         scale: 1.1;
         transition: 250ms;
     }
@@ -412,7 +261,6 @@ household products and more at a single place.</div>
         transition: 250ms;
     }
     .adidas:hover {
-        cursor: pointer;
         scale: 1.1;
         transition: 250ms;
     }
@@ -421,7 +269,6 @@ household products and more at a single place.</div>
         transition: 250ms;
     }
     .gucci:hover {
-        cursor: pointer;
         scale: 1.1;
         transition: 250ms;
     }
@@ -430,7 +277,6 @@ household products and more at a single place.</div>
         transition: 250ms;
     }
     .bukalapak:hover {
-        cursor: pointer;
         scale: 1.1;
         transition: 250ms;
     }
@@ -439,212 +285,14 @@ household products and more at a single place.</div>
         transition: 250ms;
     }
 
-    .adidas {
-        margin-top: -17px;
-    }
-
-    .tokopedia .tip-text-1 {
-        visibility: hidden;
-        width: 210px;
-        background-color: var(--fifth-color);
-        color: #fff;
-        text-align: center;
-        font-family: "Manrope";
-        font-size: 12px;
-        border-radius: 3px;
-        padding: 5px 0;
-        position: absolute;
-        z-index: 1;
-        top: 117%;
-        left: 50%;
-        margin-left: -107px;
-        opacity: 0;
-        transition: 0.3s;
-    }
-    .tokopedia .tip-text-1::after {
-        content: "";
-        position: absolute;
-        bottom: 100%;
-        left: 50%;
-        margin-left: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: transparent transparent var(--fifth-color) transparent;
-    }
-    .tokopedia:hover .tip-text-1 {
-        visibility: visible;
-        opacity: 1;
-    }
-
-    .balenciaga .tip-text-2 {
-        visibility: hidden;
-        width: 210px;
-        background-color: var(--fifth-color);
-        color: #fff;
-        text-align: center;
-        font-family: "Manrope";
-        font-size: 12px;
-        border-radius: 3px;
-        padding: 5px 0;
-        position: absolute;
-        z-index: 1;
-        top: 150%;
-        left: 50%;
-        margin-left: -107px;
-        opacity: 0;
-        transition: 0.3s;
-    }
-    .balenciaga .tip-text-2::after {
-        content: "";
-        position: absolute;
-        bottom: 100%;
-        left: 50%;
-        margin-left: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: transparent transparent var(--fifth-color) transparent;
-    }
-    .balenciaga:hover .tip-text-2 {
-        visibility: visible;
-        opacity: 1;
-    }
-
-    .adidas .tip-text-3 {
-        visibility: hidden;
-        width: 210px;
-        background-color: var(--fifth-color);
-        color: #fff;
-        text-align: center;
-        font-family: "Manrope";
-        font-size: 12px;
-        border-radius: 3px;
-        padding: 5px 0;
-        position: absolute;
-        z-index: 1;
-        top: 127%;
-        left: 50%;
-        margin-left: -107px;
-        opacity: 0;
-        transition: 0.3s;
-    }
-    .adidas .tip-text-3::after {
-        content: "";
-        position: absolute;
-        bottom: 100%;
-        left: 50%;
-        margin-left: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: transparent transparent var(--fifth-color) transparent;
-    }
-    .adidas:hover .tip-text-3 {
-        visibility: visible;
-        opacity: 1;
-    }
-
-    .gucci .tip-text-4 {
-        visibility: hidden;
-        width: 202px;
-        background-color: var(--fifth-color);
-        color: #fff;
-        text-align: center;
-        font-family: "Manrope";
-        font-size: 12px;
-        border-radius: 3px;
-        padding: 5px 0;
-        position: absolute;
-        z-index: 1;
-        top: 127%;
-        left: 50%;
-        margin-left: -100px;
-        opacity: 0;
-        transition: 0.3s;
-    }
-    .gucci .tip-text-4::after {
-        content: "";
-        position: absolute;
-        bottom: 100%;
-        left: 50%;
-        margin-left: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: transparent transparent var(--fifth-color) transparent;
-    }
-    .gucci:hover .tip-text-4 {
-        visibility: visible;
-        opacity: 1;
-    }
-
-    .bukalapak .tip-text-5 {
-        visibility: hidden;
-        width: 202px;
-        background-color: var(--fifth-color);
-        color: #fff;
-        text-align: center;
-        font-family: "Manrope";
-        font-size: 12px;
-        border-radius: 3px;
-        padding: 5px 0;
-        position: absolute;
-        z-index: 1;
-        top: 127%;
-        left: 50%;
-        margin-left: -97px;
-        opacity: 0;
-        transition: 0.3s;
-    }
-    .bukalapak .tip-text-5::after {
-        content: "";
-        position: absolute;
-        bottom: 100%;
-        left: 50%;
-        margin-left: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: transparent transparent var(--fifth-color) transparent;
-    }
-    .bukalapak:hover .tip-text-5 {
-        visibility: visible;
-        opacity: 1;
-    }
-</style>
-
-<script>
-    function tokoClick () {
-        window.location.replace("https://www.tokopedia.com/")
-    }
-    function balenClick () {
-        window.location.replace("https://www.balenciaga.com/en-ge")
-    }
-    function adidasClick () {
-        window.location.replace("https://www.adidas.com/us")
-    }
-    function gucciClick () {
-        window.location.replace("https://www.gucci.com/us/en/")
-    }
-    function bukaClick () {
-        window.location.replace("https://www.bukalapak.com/")
-    }
-</script>
-
-<div class = categories-introduction-text>Browse Categories of The Store</div>
-
-<style>
-    .categories-introduction-text {
-        position: absolute;
-        margin-top: 705px;
-        margin-left: 4.5%;
-        width: 343px;
-        height: 80px;
-        font-family: 'Manrope';
-        font-style: normal;
+    .categories {
+        font-family: Manrope;
         font-weight: 700;
         font-size: 32px;
-        line-height: 40px;
         letter-spacing: 0.3px;
-        color: #101913;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
+        margin-left: 5.5%;
+        margin-top: 2%;
     }
 </style>
+
+</html>

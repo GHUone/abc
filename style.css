@@ -2,22 +2,22 @@
     font-family: "Manrope";
     src: url(Fonts/Manrope-VariableFont_wght.ttf);
 }
-
-html, body {
-    height: 3043px;
-    margin: auto;
-    overflow-x: hidden;
-}
-body:hover {
-    background-color: var(--primary-color);
-}
-
 ::-webkit-scrollbar {
     width: 15px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--eighth-color);
   }
   ::-webkit-scrollbar-thumb {
     background: #888; 
   }
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
+  }
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    overflow-x: hidden;
   }
