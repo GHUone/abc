@@ -1,7 +1,8 @@
 <html>
 <head>
 <title>Portfolio Page</title>
-<link rel= "stylesheet" type= "text/css" href="style.css">
+<link rel = "stylesheet" type = "text/css" href = "style.css">
+<link rel = "icon" type = image/png href = "Images/Logo.png">
 </head>
 <body>
     <nav>
@@ -12,7 +13,6 @@
             <li><a href = "" class = categories-btn>Categories</a></li>
             <li><a href = "" class = brands-btn>Brands</a></li>
             <li><a href = "" class = pricing-btn>Pricing</a></li>
-    </div>
         </ul>
         <div class = registration>
             <a class = login-text>Login</a></li>
@@ -92,6 +92,15 @@
         transition: 250ms;
     }
     .brands-btn:hover {
+        cursor: pointer;
+        color: #535A56;
+        transition: 250ms;
+    }
+    .brands-btn:not(:hover) {
+        color: #101913;
+        transition: 250ms;
+    }
+    .pricing-btn:hover {
         cursor: pointer;
         color: #535A56;
         transition: 250ms;
@@ -200,24 +209,15 @@
     }
 
     .img-box {
-        width: 45%;
-        height: 80%;
-        position: absolute;
-        bottom: 0;
-        right: 100px;
-
-    }
-    .img-box img {
-        height: 100%;
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        transform: translateX(-50%);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        margin-top: -330px;
+        width: 973px;
+        margin-left: auto; 
     }
 
     .collaboration-text {
         margin-left: 2.8%;
-        margin-top: 24%;
+        margin-top: 100px;
         font-family: Manrope;
         text-align: center;
         letter-spacing: 0.3px;
@@ -240,6 +240,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 79px;
+        user-select: none;
     }
 
     .tokopedia:hover {
@@ -288,9 +289,10 @@
         transition: 250ms;
     }
 </style>
-<h2 class = categories>Browse Categories of <br> The Store</h2>
+
 <div class = all-cards>
 <div class = two-cards>
+<h2 class = categories>Browse Categories of <br> The Store</h2>
 <div class = card-text-1>
 <img src = "Images/Card 1.png" class = card-1>
 <h2>Fashion</h2>
@@ -326,7 +328,7 @@
         font-size: 32px;
         letter-spacing: 0.3px;
         margin-left: 5.5%;
-        margin-top: 2%;
+        user-select: none;
     }
     .two-cards {
         display: flex;
@@ -335,6 +337,9 @@
         padding: 0px;
         gap: 30px;
         margin: 26px;
+    }
+    .two-cards h2 {
+        margin-top: -115px;
     }
     .four-cards {
         display: flex;
@@ -348,7 +353,9 @@
         align-items: center;
         justify-content: center;
         border-radius: 30px;
+        margin-top: 129.42px;
     }
+
     .card-1 {
         border-radius: 30px;
     }
@@ -535,6 +542,363 @@
         transition: 250ms;
     }
 </style>
+<h2 class = header>Why Choose Ba<span class = color-change-3>chira</span>?</h2>
+<div class = decision-box>
+<div class = truck-box>
+<img class = truck src = "Images/Truck.png">
+<h3>Free Delivery</h3>
+<p>Lorem ipsum dolor sit amet, consectetu <br> adipiscing elit, sed do eiusmod tempor</p>
+</div> <!--truck-box-->
+<div class = handshake-box>
+<img class = handshake src = "Images/Handshake.png">
+<h3>Trusted Platform</h3>
+<p>Lorem ipsum dolor sit amet, consectetu <br> adipiscing elit, sed do eiusmod tempor</p>
+</div> <!--handshake-box-->
+<div class = time-box>
+<img class = time src = "Images/Time.png">
+<h3>Here for You</h3>
+<p>Lorem ipsum dolor sit amet, consectetu <br> adipiscing elit, sed do eiusmod tempor</p>
+</div> <!--time-box-->
+</div> <!--decision-box-->
+<style>
+    .header {
+        font-family: Manrope;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin-top: 100px;
+        margin-bottom: 60px;
+        user-select: none;
+    }
+    .color-change-3 {
+        color: #3C9379;
+    }
 
+    .decision-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        width: 80%;
+        margin: auto;
+        user-select: none;
+    }
+
+    .truck {
+        margin: 10px;
+    }
+    .truck-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+    .truck-box h3 {
+        font-family: Manrope;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0.3px;
+        color: #101913;
+        margin: 10px;
+    }
+    .truck-box p {
+        font-family: Manrope;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.3px;
+        color: #535A56;
+        margin: 10px;
+        margin-left: 0;
+    }
+
+    .handshake {
+        margin: 10px;
+    }
+    .handshake-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+    .handshake-box h3 {
+        font-family: Manrope;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0.3px;
+        color: #101913;
+        margin: 10px;
+    }
+    .handshake-box p {
+        font-family: Manrope;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.3px;
+        color: #535A56;
+        margin: 10px;
+        margin-left: 0;
+    }
+    
+    .time {
+        margin: 10px;
+    }
+    .time-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+    .time-box h3 {
+        font-family: Manrope;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0.3px;
+        color: #101913;
+        margin: 10px;
+    }
+    .time-box p {
+        font-family: Manrope;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.3px;
+        color: #535A56;
+        margin: 10px;
+        margin-left: 0;
+    }
+</style>
+<h2 class = carousel-text>Popular Products From <br> All Brands</h2>
+<div class = wrapper>
+<div class = carousel-box-1>
+<img class = carousel-card-1 src = "Images/Carousel 1.png">
+<img class = carousel-shadow src = "Images/Shadow 3.png">
+<h3>Nike Air Force</h3>
+<p>RP 2.999.999</p>
+</div> <!--carousel-box-1-->
+<div class = carousel-box-2>
+<img class = carousel-card-2 src = "Images/Carousel 2.png">
+<img class = carousel-shadow src = "Images/Shadow 3.png">
+<h3>White Sweater</h3>
+<p>RP 299.999</p>
+</div> <!--carousel-box-2-->
+<div class = carousel-box-3>
+<img class = carousel-card-3 src = "Images/Carousel 3.png">
+<img class = carousel-shadow src = "Images/Shadow 3.png">
+<h3>Android Smartwatch</h3>
+<p>RP 1.399.999</p>
+</div> <!--carousel-box-3-->
+<div class = carousel-box-4>
+<img class = carousel-card-4 src = "Images/Carousel 4.png">
+<img class = carousel-shadow src = "Images/Shadow 3.png">
+<h3>Apple Airpods</h3>
+<p>RP 2.599.999</p>
+</div> <!--carousel-box-4-->
+<div class = carousel-box-5>
+<img class = carousel-card-5 src = "Images/Carousel 5.png">
+<img class = carousel-shadow src = "Images/Shadow 3.png">
+<h3>Infant Bodysuit</h3>
+<p>RP 999.999</p>
+</div> <!--carousel-box-5-->
+</div> <!--wrapper-->
+<style>
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin: auto;
+        margin-top: 20px;
+        margin-left: 250px;
+        user-select: none;
+    }
+    .wrapper img {
+        border-radius: 30px;
+        cursor: pointer;
+    }
+    .carousel-shadow {
+        position: absolute;
+        margin-left: -280px;
+        width: 280px;
+        height: 380px;
+        opacity: 50%;
+    }
+    .carousel-shadow:hover {
+        opacity: 75%;
+        transition: 250ms;
+    }
+    .carousel-shadow:not(:hover) {
+        opacity: 50%;
+        transition: 250ms;
+    }
+    .wrapper h3 {
+        font-family: Manrope;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0.3px;
+        color: #101913;
+        margin-top: 15px;
+    }
+    .wrapper p {
+        font-family: Manrope;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 0.3px;
+        color: #101913;
+        margin-top: 8px;
+    }
+    .carousel-text {
+        font-family: Manrope;
+        letter-spacing: 0.3px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        user-select: none;
+        margin-left: 5.5%;
+        margin-top: 100px;
+    }
+</style>
+<footer>
+<div class = desc>
+<div class = footer-class>
+<h1 class = logo-3>ba<span class = color-change-4>chira</span>
+<p>Bachira is an online store handling all products. <br> Bachira provides cheap, high quality, products <br> to customers</p></h1>
+<div class = links>
+<div class = beginner-text>For Beginner
+<p>About</p>
+<p>Career</p>
+<p>Promotion</p>
+</div> <!--beginner-text-->
+<div class = overview-text>Overview
+<p>Product</p>
+<p>Categories</p>
+<p>Pricing</p>
+</div> <!--overview-text-->
+<div class = explore-text>Explore Us
+<p>Our Career</p>
+<p>Privacy</p>
+<p class = terms>Terms & Conditions</p>
+</div> <!--explore-text-->
+<div class = connect-text>Connect to Us
+<p>support@bachira.com</p>
+<p>021 - 555 - 456</p>
+<p class = address>Sudirman, South Jakarta</p>
+</div> <!--explore-text-->
+</footer>
+</div> <!--desc-->
+</div> <!--footer-class-->
+</div> <!--links-->
+<p class = copyright>Copyright 2023 • All Rights Reserved Bachira by Giatinaja</p>
+<style>
+    .footer-class {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        gap: 64px;
+        width: 90%;
+        margin: auto;
+        margin-top: 150px;
+        user-select: none;
+    }
+    .desc {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 14px;
+        font-family: Manrope;
+    }
+    .color-change-4 {
+        color: #3C9379;
+    }
+
+    .desc h1 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 0.5px;
+        color: #101913;
+    }
+    .desc p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.3px;
+        color: #535A56;
+        margin: 8px;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.3px;
+        color: #101913;
+        gap: 89px;
+        margin: 8px;
+    }
+    .links p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        margin-left: 0;
+        cursor: pointer;
+    }
+    .links p:hover {
+        color: #101913;
+        transition: 250ms;
+    }
+    .links p:not(:hover) {
+        color: #535A56;
+        transition: 250ms;
+    }
+    .copyright {
+        font-family: Manrope;
+        margin-left: 2.8%;
+        margin-top: 53px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.3px;
+        color: #535A56;
+        user-select: none;
+    }
+
+    .beginner-text {
+        width: 110px;
+    }
+    .terms {
+        width: 140px;
+    }
+    .address {
+        width: 170px;
+    }
+    .logo-3 p {
+        width: 370px;
+    }
+    .logo-3 p {
+        margin-left: 0;
+    }
 </style>
 </html>
