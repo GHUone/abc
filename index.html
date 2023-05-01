@@ -160,7 +160,7 @@
     <div class = "img-box">
         <img src = "Images/Hero-Image.png" class = full-girl>
     </div>
-</div>
+</div> <!--info-->
 <h2 class = collaboration-text>We Collaborate With 250+ Leading Top <br> E Commerce and Brands</h2>
 <style>
     .info {
@@ -211,7 +211,7 @@
     .img-box {
         transform: matrix(-1, 0, 0, 1, 0, 0);
         margin-top: -330px;
-        width: 973px;
+        width: 300px;
         margin-left: auto; 
     }
 
@@ -227,11 +227,11 @@
     }
 </style>
 <div class = brands>
-<img src = Images/Tokopedia.png class = tokopedia>
-<img src = Images/Balenciaga.png class = balenciaga>
-<img src = Images/Adidas.png class = adidas>
-<img src = Images/Gucci.png class = gucci>
-<img src = Images/Bukalapak.png class = bukalapak>
+<a href = "https://www.tokopedia.com/"><div class = tokopedia><img src = Images/Tokopedia.png><span class = "tip-text-1">Clicking this will refer you to the official Tokopedia media page.</span></div></a>
+<a href = "https://www.balenciaga.com/en-ge"><div class = balenciaga><img src = Images/Balenciaga.png><span class = "tip-text-2">Clicking this will refer you to the official Balenciaga media page.</span></div></a>
+<a href = "https://www.adidas.com/us"><div class = adidas><img src = Images/Adidas.png><span class = "tip-text-3">Clicking this will refer you to the official Adidas media page.</span></div></a>
+<a href = "https://www.gucci.com/us/en/"><div class = gucci><img src = Images/Gucci.png><span class = "tip-text-4">Clicking this will refer you to the official Gucci media page.</span></div></a>
+<a href = "https://www.bukalapak.com/"><div class = bukalapak><img src = Images/Bukalapak.png><span class = "tip-text-5">Clicking this will refer you to the official Bukalapak media page.</span></div></a>
 </div> <!--brands-->
 <style>
     .brands {
@@ -287,6 +287,173 @@
     .bukalapak:not(:hover) {
         scale: 1;
         transition: 250ms;
+    }
+    .adidas {
+        margin-top: -17px;
+    }
+    
+    .tokopedia .tip-text-1 {
+        visibility: hidden;
+        width: 210px;
+        background-color: #0059ff;
+        color: #fff;
+        text-align: center;
+        font-family: "Manrope";
+        font-size: 12px;
+        border-radius: 3px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: 117%;
+        left: 50%;
+        margin-left: -107px;
+        opacity: 0;
+        transition: 0.3s;
+    }
+    .tokopedia .tip-text-1::after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent #0059ff transparent;
+    }
+    .tokopedia:hover .tip-text-1 {
+        visibility: visible;
+        opacity: 1;
+    }
+    .balenciaga .tip-text-2 {
+        visibility: hidden;
+        width: 210px;
+        background-color: #0059ff;
+        color: #fff;
+        text-align: center;
+        font-family: "Manrope";
+        font-size: 12px;
+        border-radius: 3px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: 150%;
+        left: 50%;
+        margin-left: -107px;
+        opacity: 0;
+        transition: 0.3s;
+    }
+    .balenciaga .tip-text-2::after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent #0059ff transparent;
+    }
+    .balenciaga:hover .tip-text-2 {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .adidas .tip-text-3 {
+        visibility: hidden;
+        width: 210px;
+        background-color: #0059ff;
+        color: #fff;
+        text-align: center;
+        font-family: "Manrope";
+        font-size: 12px;
+        border-radius: 3px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: 127%;
+        left: 50%;
+        margin-left: -107px;
+        opacity: 0;
+        transition: 0.3s;
+    }
+    .adidas .tip-text-3::after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent #0059ff transparent;
+    }
+    .adidas:hover .tip-text-3 {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .gucci .tip-text-4 {
+        visibility: hidden;
+        width: 202px;
+        background-color: #0059ff;
+        color: #fff;
+        text-align: center;
+        font-family: "Manrope";
+        font-size: 12px;
+        border-radius: 3px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: 127%;
+        left: 50%;
+        margin-left: -100px;
+        opacity: 0;
+        transition: 0.3s;
+    }
+    .gucci .tip-text-4::after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent #0059ff transparent;
+    }
+    .gucci:hover .tip-text-4 {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .bukalapak .tip-text-5 {
+        visibility: hidden;
+        width: 202px;
+        background-color: #0059ff;
+        color: #fff;
+        text-align: center;
+        font-family: "Manrope";
+        font-size: 12px;
+        border-radius: 3px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: 127%;
+        left: 50%;
+        margin-left: -97px;
+        opacity: 0;
+        transition: 0.3s;
+    }
+    .bukalapak .tip-text-5::after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent #0059ff transparent;
+    }
+    .bukalapak:hover .tip-text-5 {
+        visibility: visible;
+        opacity: 1;
     }
 </style>
 
@@ -379,7 +546,7 @@
         margin-left: 370px;
         letter-spacing: 0.3px;
         line-height: 20px;
-        z-index: 2;
+        z-index: 1;
     }
     .card-text-1 p {
         position: absolute;
@@ -391,7 +558,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 16px;
-        z-index: 2;
+        z-index: 1;
     }
     .card-text-1 {
         user-select: none;
@@ -422,7 +589,7 @@
         margin-left: 370px;
         letter-spacing: 0.3px;
         line-height: 20px;
-        z-index: 2;
+        z-index: 1;
     }
     .card-text-2 p {
         position: absolute;
@@ -434,7 +601,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 16px;
-        z-index: 2;
+        z-index: 1;
     }
     .card-text-2 {
         user-select: none;
@@ -465,7 +632,7 @@
         margin-left: 160px;
         letter-spacing: 0.3px;
         line-height: 20px;
-        z-index: 2;
+        z-index: 1;
     }
     .card-text-3 p {
         position: absolute;
@@ -477,7 +644,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 16px;
-        z-index: 2;
+        z-index: 1;
     }
     .card-text-3 {
         user-select: none;
@@ -508,7 +675,7 @@
         margin-left: 225px;
         letter-spacing: 0.3px;
         line-height: 20px;
-        z-index: 2;
+        z-index: 1;
     }
     .card-text-4 p {
         position: absolute;
@@ -520,7 +687,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 16px;
-        z-index: 2;
+        z-index: 1;
     }
     .card-text-4 {
         user-select: none;
@@ -587,6 +754,9 @@
         width: 80%;
         margin: auto;
         user-select: none;
+    }
+    .decision-box p {
+        text-align: center;
     }
 
     .truck {
@@ -855,6 +1025,7 @@
         color: #101913;
         gap: 89px;
         margin: 8px;
+        text-align: left;
     }
     .links p {
         font-weight: 400;
