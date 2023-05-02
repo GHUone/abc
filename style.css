@@ -14,12 +14,28 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
-  *{
-    margin: 0;
-    padding: 0;
-  }
+
+  
   body {
     overflow-x: hidden;
-    background-color: #DBF9FC;
+    background-color: var(--color-1);
   }
   
+  :root {
+    --color-1: #DBF9FC;
+    --color-2: #d4f2f5;
+    --color-3: #888888;
+    --color-4: #101913;
+    --color-5: #535A56;
+    --color-6: #3C9379;
+    --color-7: #0059ff;
+  }
+  .dark-theme {
+    --color-1: #0e0d0d;
+    --color-2: #000000;
+    --color-3: #181717;
+    --color-4: #ffffff;
+    --color-5: #a8b3ad;
+    --color-6: #3C9379;
+    --color-7: #493c93;
+  }
